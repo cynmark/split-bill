@@ -1,0 +1,21 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+*.log
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Local verification artifacts
+.preview/
+__pycache__/

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Split Bill — a simpler home for shared expenses. Phase 0 dashboard preview.">
+  <meta name="theme-color" content="#5145cd">
+  <title>Dashboard · Split Bill</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="index.html" aria-label="Split Bill home"><span class="brand-mark" aria-hidden="true">s<span> /</span></span>Split Bill<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="primary-nav" class="navigation" aria-label="Main navigation">
+      <p class="nav-caption">YOUR WORKSPACE</p>
+      <a class="nav-item active" href="#main" aria-current="page"><span aria-hidden="true">▦</span>Dashboard</a>
+      <button class="nav-item" type="button" data-feature="Groups"><span aria-hidden="true">▤</span>Groups</button>
+      <button class="nav-item" type="button" data-feature="Activity"><span aria-hidden="true">◷</span>Activity</button>
+      <button class="nav-item" type="button" data-feature="Insights"><span aria-hidden="true">▥</span>Insights</button>
+      <div class="nav-divider"></div>
+      <button class="nav-item" type="button" data-feature="Settings"><span aria-hidden="true">⚙</span>Settings</button>
+    </nav>
+    <div class="sidebar-note"><span class="note-symbol" aria-hidden="true">✳</span><h2>Good times.<br>Shared fairly.</h2><p>Less time doing the math.<br>More time making memories.</p><span class="phase-label">PHASE 0 · PREVIEW</span></div>
+    <div class="profile"><span class="avatar">JD</span><div><strong>Jamie Demo</strong><span>Sample workspace</span></div><span class="profile-dot" aria-hidden="true"></span></div>
+  </aside>
+
+  <div class="workspace">
+    <header class="topbar"><span>Workspace <span class="breadcrumb-divider">/</span> <strong>Overview</strong></span><span class="preview-pill"><span aria-hidden="true">●</span> Demo mode</span></header>
+    <main id="main" tabindex="-1">
+      <section class="page-heading" aria-labelledby="page-title"><div><p class="eyebrow">A LITTLE CLARITY, EVERY DAY</p><h1 id="page-title">Your shared life, in balance<span>.</span></h1><p>All your shared expenses. One calm place to keep track.</p></div><button class="button button-primary" type="button" data-feature="Adding expenses"><span aria-hidden="true">＋</span> Add expense <span class="soon-label">Soon</span></button></section>
+
+      <div class="demo-notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>A preview of what’s to come.</strong> All balances, groups, and activity below are fictional sample data.</p><span class="notice-tag">No live data</span></div>
+
+      <section aria-labelledby="balances-title"><div class="section-heading"><h2 id="balances-title">At a glance</h2><span class="section-meta">Sample balances · THB</span></div><div id="balance-cards" class="balance-grid"></div></section>
+
+      <div class="content-grid">
+        <section class="groups-section" aria-labelledby="groups-title"><div class="section-heading"><div><h2 id="groups-title">Your groups <span class="count-badge">3</span></h2><p>The people you split life with.</p></div><button class="text-button" type="button" data-feature="Groups">View all <span aria-hidden="true">↗</span></button></div><div id="group-list" class="group-list"></div><button class="create-group" type="button" data-feature="Creating groups"><span aria-hidden="true">＋</span><strong>A new plan starts with a group</strong><span>Create a group · Coming later</span></button></section>
+
+        <section class="activity-panel" aria-labelledby="activity-title"><div class="section-heading"><div><h2 id="activity-title">Recent activity</h2><p>A little history of shared moments.</p></div><span class="activity-indicator" aria-hidden="true"></span></div><p class="activity-date">SAMPLE DAY · 14 OCT 2026</p><ul id="activity-list" class="activity-list"></ul><div class="activity-footer"><span aria-hidden="true">✓</span> You’re all caught up on this preview.</div></section>
+      </div>
+      <footer class="page-footer"><span>Split simply. Live fully.</span><span>Split Bill <span aria-hidden="true">·</span> Foundation preview / 0.1</span></footer>
+      <noscript><p class="demo-notice">Enable JavaScript to display the sample dashboard data. This preview does not store any data.</p></noscript>
+    </main>
+  </div>
+  <div id="feature-message" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+</body>
+</html>
